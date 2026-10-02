@@ -1,13 +1,15 @@
 # SFTP deployment
 
-The `Deploy themes via SFTP` workflow uploads tracked `themes/` files on pushes
+The `Deploy themes via SFTP` workflow uploads tracked `themes/` files to staging on pushes
 to `main` that change themes or deployment code. It also supports manual runs
 from GitHub's **Actions** tab (select `main`). PHP syntax is checked first.
 
 ## GitHub setup
 
-1. Open this repository's **Settings → Environments** and create `production`.
-2. Add the following **Environment secrets** to `production`:
+1. Open this repository's **Settings → Secrets and variables → Actions**.
+2. Use **New repository secret** to add the following staging server settings.
+   No GitHub environment is required. If you already added environment secrets,
+   recreate them as repository secrets so this workflow can access them.
 
    | Secret | Value |
    | --- | --- |
@@ -54,4 +56,4 @@ host keys. Never commit the password to the repository.
 - Requires SFTP access only, with write access to the destination; no remote
   shell access is required. Hosting firewalls must allow the GitHub runner.
 
-Reference: [GitHub environment configuration](https://docs.github.com/en/actions/how-tos/deploy/configure-and-manage-deployments/manage-environments).
+Reference: [GitHub Actions secrets](https://docs.github.com/en/actions/how-tos/write-workflows/use-secrets).
