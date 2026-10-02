@@ -89,6 +89,16 @@
 				            'walker'          => new wp_bootstrap_navwalker()
 			            ));
 		            ?>
+				<form role="search" method="get" class="search-form navigation-search my-3" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+					<label class="search-form-label">
+						<span class="sr-only"><?php esc_html_e( 'Search for:', 'wp-bootstrap-starter' ); ?></span>
+						<input type="search" class="search-field form-control" placeholder="<?php echo esc_attr_x( 'Search...', 'placeholder', 'wp-bootstrap-starter' ); ?>" value="<?php echo get_search_query(); ?>" name="s">
+					</label>
+					<button type="submit" class="search-submit btn btn-primary">
+						<span class="fas fa-search" aria-hidden="true"></span>
+						<span class="sr-only"><?php esc_html_e( 'Search', 'wp-bootstrap-starter' ); ?></span>
+					</button>
+				</form>
 		        </div><!-- .container-fluid-->
 		        
 		        <div class="container-fluid p-4"> 

@@ -131,6 +131,25 @@ button:active {
 	outline-offset: 3px;
 }
 
+/* Compact search beneath the primary navigation */
+.search-form.navigation-search {
+	flex-wrap: nowrap;
+	gap: .5rem;
+}
+
+.navigation-search .search-form-label {
+	flex: 1 1 0;
+}
+
+.navigation-search .search-field {
+	padding: .625rem .75rem;
+}
+
+.navigation-search .search-submit {
+	width: 3rem;
+	padding: .625rem;
+}
+
 /* Search results */
 .search-results-content {
 	max-width: 48rem;
