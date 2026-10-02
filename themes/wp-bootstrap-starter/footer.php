@@ -21,10 +21,10 @@
 
 <!-- Search Modal -->
 <div class="modal fade" id="site-search" tabindex="-1" role="dialog" aria-labelledby="site-search-label" aria-hidden="true">
-	<div class="modal-dialog" role="document">
+	<div class="modal-dialog modal-lg" role="document">
     	<div class="modal-content">
 	    	<div class="modal-header">
-		    	<h5 class="modal-title sr-only" id="site-search-label">Search Website</h5>
+			<h2 class="modal-title h5" id="site-search-label"><?php esc_html_e( 'Search MNT-EC', 'wp-bootstrap-starter' ); ?></h2>
 		    	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 		          <span aria-hidden="true">&times;</span>
 		        </button>
