@@ -9,9 +9,7 @@ get_header(); ?>
 		<div id="main" class="site-main" role="main">
 			<div class="row">
 				<div class="col-sm-12 col-md-4">
-					<?php // Ajax Search Implementation
-						echo do_shortcode('[wd_asp id=1]');
-					?>
+					<?php get_search_form(); ?>
 				</div>
 			</div>
 

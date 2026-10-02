@@ -1,12 +1,7 @@
-<?php /* Removed and replaced by AJAX Search Pro
 <form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
     <label>
-        <input type="search" class="search-field form-control" placeholder="<?php echo esc_attr_x( 'Search &hellip;', 'placeholder', 'wp-bootstrap-starter' ); ?>" value="<?php echo esc_attr( get_search_query() ); ?>" name="s" title="<?php _ex( 'Search for:', 'label', 'wp-bootstrap-starter' ); ?>">
+        <span class="screen-reader-text"><?php esc_html_e( 'Search for:', 'wp-bootstrap-starter' ); ?></span>
+        <input type="search" class="search-field form-control" placeholder="<?php echo esc_attr_x( 'Search &hellip;', 'placeholder', 'wp-bootstrap-starter' ); ?>" value="<?php echo get_search_query(); ?>" name="s">
     </label>
     <input type="submit" class="search-submit btn btn-default" value="<?php echo esc_attr_x( 'Search', 'submit button', 'wp-bootstrap-starter' ); ?>">
-</form>*/ ?>
-
-<?php echo do_shortcode('[wd_asp id=1002]'); ?>
-
-
-
+</form>

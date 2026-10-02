@@ -13,6 +13,9 @@ get_header(); ?>
 		<div class="row">
 			<section id="primary" class="content-area col-sm-12 col-lg-12 p-3 px-lg-0">
 				<div id="main" class="site-main" role="main">
+					<div class="mb-4">
+						<?php get_search_form(); ?>
+					</div>
 		
 				<?php
 				if ( have_posts() ) : ?>

@@ -30,7 +30,7 @@
 		        </button>
 	    	</div>
 	    	<div class="modal-body">
-		    	<?php echo do_shortcode('[wd_asp id=1002]'); ?>
+			<?php get_search_form(); ?>
 	    	</div>
     	</div>
 	</div>
