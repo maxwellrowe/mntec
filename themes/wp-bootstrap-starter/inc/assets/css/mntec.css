@@ -958,6 +958,9 @@ Latest Swiper/ Slider
 #masthead .mntec-submenu[hidden] {
     display: none !important;
 }
+#masthead #menu-secondary-menu .nav-link {
+    font-size: 0.9rem;
+}
 #masthead .mntec-submenu .nav-link {
     font-size: 0.9rem;
 }
