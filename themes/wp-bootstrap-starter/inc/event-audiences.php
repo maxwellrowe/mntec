@@ -37,4 +37,4 @@ function mntec_list_event_audiences( $html, $file, $name, $template ) {
     }
     return $html;
 }
-add_filter( 'tribe_template_after_include_html:events/v2/list/event/title', 'mntec_list_event_audiences', 10, 4 );
+add_filter( 'tribe_template_after_include_html:events/v2/list/event/description', 'mntec_list_event_audiences', 10, 4 );
