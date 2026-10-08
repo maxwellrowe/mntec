@@ -9,7 +9,7 @@ function mntec_event_audiences_html( $event_id ) {
         return '';
     }
 
-    $html = '<div class="mntec-event-audiences" role="group" aria-label="' . esc_attr__( 'Event audiences', 'wp-bootstrap-starter' ) . '">';
+    $html = '<div class="mntec-event-audiences py-3" role="group" aria-label="' . esc_attr__( 'Event audiences', 'wp-bootstrap-starter' ) . '">';
     foreach ( $terms as $term ) {
         $color = function_exists( 'get_field' ) ? get_field( 'color', 'term_' . $term->term_id ) : '';
         $link = function_exists( 'get_field' ) ? get_field( 'audience_landing_page', 'term_' . $term->term_id ) : '';
