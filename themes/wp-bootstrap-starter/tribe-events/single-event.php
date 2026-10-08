@@ -81,6 +81,8 @@ $title = apply_filters( 'tribe_events_single_event_title_html', the_title( $befo
 		<?php endif; ?>
 	</div>
 
+	<?php echo mntec_event_audiences_html( $event_id ); ?>
+
 	<!-- Event header -->
 	<div id="tribe-events-header" <?php tribe_events_the_header_attributes() ?>>
 		<!-- Navigation -->

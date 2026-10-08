@@ -215,7 +215,7 @@ function wp_bootstrap_starter_scripts() {
     // Swiper JS
     wp_enqueue_style( 'swiper_css', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css', array(), '1.3', 'all' );
     // Custom CSS for MNT-EC
-     wp_enqueue_style( 'mntec-css', get_template_directory_uri() . '/inc/assets/css/mntec.css', array(), '2.9', 'all' );
+     wp_enqueue_style( 'mntec-css', get_template_directory_uri() . '/inc/assets/css/mntec.css', array(), '2.10', 'all' );
     //Color Scheme
     /*if(get_theme_mod( 'preset_color_scheme_setting' ) && get_theme_mod( 'preset_color_scheme_setting' ) !== 'default') {
         wp_enqueue_style( 'wp-bootstrap-starter-'.get_theme_mod( 'preset_color_scheme_setting' ), get_template_directory_uri() . '/inc/assets/css/presets/color-scheme/'.get_theme_mod( 'preset_color_scheme_setting' ).'.css', false, '' );
@@ -332,6 +332,7 @@ if ( ! class_exists( 'wp_bootstrap_navwalker' )) {
 
 // Load Stainless Custom Functions
 require get_template_directory() . '/inc/mntec-functions.php';
+require get_template_directory() . '/inc/event-audiences.php';
 
 /*
  * Possible solution for Single Event page 404 errors where the WP_Query has an attachment set

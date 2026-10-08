@@ -607,6 +607,41 @@ a.mntec-card.card:hover {
 
 /* Events Module */
 
+.mntec-event-audiences {
+	display: flex;
+	flex-wrap: wrap;
+	gap: .5rem 1rem;
+	margin: .5rem 0 1rem;
+}
+
+.mntec-event-audiences .mntec-event-audience {
+	display: inline-flex;
+	align-items: center;
+	gap: .4rem;
+	color: #212529;
+	font-size: .875rem;
+	line-height: 1.5;
+}
+
+.mntec-event-audience__dot {
+	display: inline-block;
+	flex: 0 0 .75rem;
+	width: .75rem;
+	height: .75rem;
+	border: 1px solid rgba(0, 0, 0, .2);
+	border-radius: 50%;
+	background-color: #767676;
+}
+
+.mntec-event-audiences a.mntec-event-audience:hover {
+	text-decoration: underline;
+}
+
+.mntec-event-audiences a.mntec-event-audience:focus-visible {
+	outline: 2px solid currentColor;
+	outline-offset: 3px;
+}
+
 a.event-card-audience-color {
 	display: inline-block;
 	width: 1rem;
